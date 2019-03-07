@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Es3-n3-8vd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="aRT-qG-r1L">
+            <objects>
+                <viewController id="Es3-n3-8vd" customClass="MainViewController" customModule="Magic8Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ykF-yO-a99">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magic-8-ball" translatesAutoresizingMaskIntoConstraints="NO" id="f12-ZV-acC">
+                                <rect key="frame" x="94" y="250" width="187.5" height="187.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="f12-ZV-acC" secondAttribute="height" multiplier="1:1" id="Kx2-8e-tRp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSk-KN-cBJ">
+                                <rect key="frame" x="32" y="477.5" width="311" height="33.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51v-qx-DWO">
+                                <rect key="frame" x="172.5" y="180" width="30" height="30"/>
+                                <state key="normal" title="Ask"/>
+                                <connections>
+                                    <action selector="ask" destination="Es3-n3-8vd" eventType="touchUpInside" id="Y7w-2W-wMQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0qs-dl-yPJ" firstAttribute="trailing" secondItem="pSk-KN-cBJ" secondAttribute="trailing" constant="32" id="2eG-OZ-JYV"/>
+                            <constraint firstItem="pSk-KN-cBJ" firstAttribute="leading" secondItem="0qs-dl-yPJ" secondAttribute="leading" constant="32" id="6EQ-Xc-VdW"/>
+                            <constraint firstItem="f12-ZV-acC" firstAttribute="centerY" secondItem="0qs-dl-yPJ" secondAttribute="centerY" id="DJb-7T-IDB"/>
+                            <constraint firstItem="51v-qx-DWO" firstAttribute="centerX" secondItem="0qs-dl-yPJ" secondAttribute="centerX" id="KY2-e1-koU"/>
+                            <constraint firstItem="f12-ZV-acC" firstAttribute="width" secondItem="ykF-yO-a99" secondAttribute="width" multiplier="1:2" id="MCE-4a-PYs"/>
+                            <constraint firstItem="f12-ZV-acC" firstAttribute="top" secondItem="51v-qx-DWO" secondAttribute="bottom" constant="40" id="Q5g-Ik-jGO"/>
+                            <constraint firstItem="pSk-KN-cBJ" firstAttribute="top" secondItem="f12-ZV-acC" secondAttribute="bottom" constant="40" id="iOw-KX-B1q"/>
+                            <constraint firstItem="f12-ZV-acC" firstAttribute="centerX" secondItem="0qs-dl-yPJ" secondAttribute="centerX" id="qk2-Sf-knd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0qs-dl-yPJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="pSk-KN-cBJ" id="PVA-GH-uLS"/>
+                        <outlet property="askButton" destination="51v-qx-DWO" id="QgR-kN-2ho"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bQu-as-5wS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="-200"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="magic-8-ball" width="300" height="300"/>
+    </resources>
+</document>
