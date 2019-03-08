@@ -8,8 +8,11 @@
 
 You can find images and text resources in `Resources` folder.
 
-Do not forget install Xcode:
+Do not forget install Xcode:  
 https://itunes.apple.com/cl/app/xcode/id497799835?mt=12
+
+You can find screencast (only in Spanish, sorry) here:  
+https://youtu.be/3U_9XbZkbkk
 
 | Screenshot | Gif in action |
 |---|---|
