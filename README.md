@@ -11,6 +11,6 @@ You can find images and text resources in `Resources` folder.
 Do not forget install Xcode:
 https://itunes.apple.com/cl/app/xcode/id497799835?mt=12
 
-| Gif |
-|---|
-| ![](./Resources/in-action.gif) |
+| Screenshot | Gif in action |
+|---|---|
+| ![](./Resources/result-screenshot.png) | ![](./Resources/in-action.gif) |
